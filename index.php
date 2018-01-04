@@ -25,8 +25,13 @@ require_once ('config.php');
 #$aluno->setDessenha("Vlado");
 #$aluno->insert();
 
+//Update usuário
+#$usuario = new Usuario();
+#$usuario->loadById(20);
+#$usuario->update("Ox", "12345");
+
 $usuario = new Usuario();
 $usuario->loadById(20);
-$usuario->update("Ox", "12345");
+$usuario->delete();
 
 echo $usuario;
